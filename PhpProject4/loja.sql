@@ -67,17 +67,11 @@ INSERT INTO `usuarios` (`id`, `email`, `senha`, `nome`, `sobrenome`, `ativo`) VA
 (1, 'admin@admin.com', '827ccb0eea8a706c4c34a16891f84e7b', 'Admin', 'Control', 1),
 
 
--- Indexes for dumped tables
-
-
-
--- Indexes for table `categorias`
-
 ALTER TABLE `categorias`
   ADD PRIMARY KEY (`id`);
 
 
--- Indexes for table `produtos`
+-- Indexes da tabela `produtos`
 
 ALTER TABLE `produtos`
   ADD PRIMARY KEY (`id`);
@@ -88,23 +82,15 @@ ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 
--- AUTO_INCREMENT for dumped tables
-
-
-
--- AUTO_INCREMENT for table `categorias`
 
 ALTER TABLE `categorias`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 
--- AUTO_INCREMENT for table `produtos`
-
 ALTER TABLE `produtos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 
--- AUTO_INCREMENT for table `usuarios`
 
 ALTER TABLE `usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
